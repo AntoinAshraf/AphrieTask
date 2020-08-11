@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestimonialsService } from 'src/app/services/testimonials.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
-
+  constructor( private testmonialService:TestimonialsService ) { }
+  subscriber;
+  persons;
+  personsCount;
   ngOnInit(): void {
+    this.subscriber = this.testmonialService.getPersons()
+      .subscribe((responce)=>{
+        this.persons = responce['data'];
+        this.personsCount = responce['per_page'];
+      })
   }
 
 }

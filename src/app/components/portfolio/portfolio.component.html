@@ -7,20 +7,93 @@
             <div class=" container text-center">
                 <div class="col-3 d-inline m-0 p-0"></div>
                 <div class="col-4 container text-center pb-3">
-                    <div class="col text-center d-inline m-2 py-1 text-light" style="background-color: royalblue; border-radius: 20px;">
+                    <div class="col text-center d-inline m-2 py-1 text-light"
+                        style="background-color: royalblue; border-radius: 20px;">
                         <p class="d-inline"> ALL </p>
                     </div>
-                    <div class="col d-inline text-center m-2 py-1 text-primary" style="background-color: lightblue; border-radius: 20px;">
+                    <div class="col d-inline text-center m-2 py-1 text-primary"
+                        style="background-color: lightblue; border-radius: 20px;">
                         <p class="d-inline"> APP </p>
                     </div>
-                    <div class="col d-inline text-center m-2 py-1 text-primary" style="background-color: lightblue; border-radius: 20px;">
+                    <div class="col d-inline text-center m-2 py-1 text-primary"
+                        style="background-color: lightblue; border-radius: 20px;">
                         <p class="d-inline"> CARD </p>
                     </div>
-                    <div class="col d-inline text-center m-2 py-1 text-primary" style="background-color: lightblue; border-radius: 20px;">
+                    <div class="col d-inline text-center m-2 py-1 text-primary"
+                        style="background-color: lightblue; border-radius: 20px;">
                         <p class="d-inline"> WEB </p>
                     </div>
                 </div>
                 <div class="col-3 d-inline m-0 p-0"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/app1.jpg" />
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/web2.jpg" />
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/web1.jpg" />
+            </div>
+            <div class="col">
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/web3.jpg" />
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/card2.jpg" />
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/card3.jpg" />
+            </div>
+            <div class="col">
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/app2.jpg" />
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/app3.jpg" />
+                <img class="img-fluid rounded m-2" src="assets/images/portfolio/card1.jpg" />
+            </div>
+        </div>
+
+        <div class="row text-center mt-5" style="box-shadow: inset 0px 11px 8px -10px #BBB, inset 0px -11px 8px -10px #BBB; background-color: lightblue;">
+            <div class="container">
+                <div class="col-12 text-center">
+                    <p class="display-4 text-center"> <small> Testimonials </small> </p>
+                </div>
+            </div>
+            <div class="container col-6 pb-5">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item text-center active">
+                            <div class="row col-9">
+                                <div class="col-3">
+                                    <i class="d-block img-fluid rounded-circle fa fa-user fa-4x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col">
+                                    <div class="row m-0 p-0">
+                                        <p class="font-weight-bold m-0 p-0">Name</p>
+                                        <div class="col"></div>
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <p class="text-dark"> Description</p>
+                                        <div class="col"></div>
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <p class="text-dark" style="text-align:left"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo amet esse debitis, itaque suscipit obcaecati accusantium, tempora libero, molestias  </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <app-person *ngFor="let person of persons" [personInfo]="person" class="carousel-item text-center">
+                            
+                        </app-person>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                        <li data-target="#mycarousel" data-slide-to="3"></li>
+                        <li data-target="#mycarousel" data-slide-to="4"></li>
+                        <li data-target="#mycarousel" data-slide-to="5"></li>
+                        <li data-target="#mycarousel" data-slide-to="6"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
