@@ -80,12 +80,7 @@
                     </div>
                     <ol class="carousel-indicators">
                         <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#mycarousel" data-slide-to="1"></li>
-                        <li data-target="#mycarousel" data-slide-to="2"></li>
-                        <li data-target="#mycarousel" data-slide-to="3"></li>
-                        <li data-target="#mycarousel" data-slide-to="4"></li>
-                        <li data-target="#mycarousel" data-slide-to="5"></li>
-                        <li data-target="#mycarousel" data-slide-to="6"></li>
+                        <app-carousel-persons-dots *ngFor="let person of persons" [personID]="person.id"></app-carousel-persons-dots>
                     </ol>
                     <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
